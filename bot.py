@@ -32,7 +32,7 @@ def country_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🇲🇽 Mexico", callback_data="country_mx")],
         [InlineKeyboardButton(text="🇮🇳 India", callback_data="country_in")],
-        [InlineKeyboardButton(text="🇦🇷 Argentina", callback_data="country_ar")]
+        [InlineKeyboardButton(text="🇦🇷 Argentina", callback_data="country_arg")]
     ])
 
 # ───────────────── /start ─────────────────
