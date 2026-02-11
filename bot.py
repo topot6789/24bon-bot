@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 
 # 👇 import your country-specific bots
-from countries import mx, in_  # add more later when ready
+from countries import mx, in_, arg  # add more later when ready
 
 TOKEN = os.getenv("BOT_TOKEN")  # ⚠️ use env var in production
 
@@ -17,7 +17,8 @@ user_country: dict[int, str] = {}
 
 COUNTRY_HANDLERS = {
     "mx": mx,     # Mexico
-    "in": in_,    # India
+    "in": in_,# India
+    "arg": arg
 }
 
 def get_handler(user_id: int):
@@ -31,6 +32,7 @@ def country_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🇲🇽 Mexico", callback_data="country_mx")],
         [InlineKeyboardButton(text="🇮🇳 India", callback_data="country_in")],
+        [InlineKeyboardButton(text="🇦🇷 Argentina", callback_data="country_ar")]
     ])
 
 # ───────────────── /start ─────────────────
