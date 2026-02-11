@@ -168,7 +168,8 @@ async def handle_callback(call: types.CallbackQuery):
             "💸 Cashback Diario según tu Volumen de Apuestas\n\n"
             "📅 Check-in Diario de 7 Días\n\n"
             "🥚 Huevo Dorado por Pérdidas\n\n"
-            "🎡 Ruleta de la Suerte\n\n",
+            "🎡 Ruleta de la Suerte\n\n"
+            "💸 Invita y Gana Dinero\n\n", 
             reply_markup=kb
         )
 
